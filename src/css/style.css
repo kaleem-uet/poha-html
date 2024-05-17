@@ -1,0 +1,120 @@
+/* generic css that is apply to all pages  */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 200px;
+    background-color: #92d050;
+    position: relative;
+}
+
+.card_profile_img {
+    width: 150px;
+    height: 150px;
+    background-color: #92d050;
+    background: url("https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid #ffff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -3px;
+    transform: translate(-50%, 50%)
+}
+
+.card_profile_img_right{
+    width: 150px;
+    height: 150px;
+    background-color: #92d050;
+    background: url("https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid #ffff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    right: -73px;
+    bottom: -3px;
+    transform: translate(-50%, 50%)
+}
+main {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.card {
+    cursor: pointer;
+    /* border: 2px solid #92d050; */
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+.lesson-card{
+ cursor: pointer;
+}
+.lesson-card:hover{
+    opacity: 0.6;
+}
+
+.card:hover {
+    opacity: 0.8;
+}
+
+button {
+    border: 0;
+    background-color: #92d050;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    width: auto;
+}
+
+/* for lesson page  */
+.background {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    /* justify-content: center; */
+    background-color: #92d050;
+    position: relative;
+}
+
+.header-icon {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* for result page  */
+thead {
+    color: #ffff;
+    background-color: #70ad47;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+}
+footer {
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking to fit its content */
+    margin-top: auto;
+    /* Push the footer to the bottom of the page */
+}
+
+
